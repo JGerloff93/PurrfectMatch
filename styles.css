@@ -1,0 +1,139 @@
+    /*Header CSS from LandingPage  */
+div.imgcontainer { background: url( 
+    "https://images.unsplash.com/photo-1486530555807-11f29d0dff36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .navbar {
+      background: rgb(218,110,3);
+  background: radial-gradient(circle, rgba(218,110,3,1) 58%, rgba(238,155,56,1) 100%);}
+
+  .site-footer {
+    background: rgb(218,110,3);
+    background: radial-gradient(circle, rgba(218,110,3,1) 58%, rgba(238,155,56,1) 100%);;
+        padding: 20px 0px; }
+    
+    #Content { text-align: center;
+     padding-top: 25%;
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                   0px 8px 13px rgba(0,0,0,0.1),
+                   0px 18px 23px rgba(0,0,0,0.1);}	
+    
+    /*We put the html here since the background image defaults to covering the body. 
+    However, the body only goes so far so it is very possible that it will repeat or resize weird. 
+    The HTML will fix that. */
+    html {height:100%;}
+    hr {width: 400px; 
+      border-top: 1px solid #f8f8f8;
+      border-bottom: 1px solid rgba(0,0,0,.2)}
+
+    hr.break {
+      width: 100%; 
+        border-top: 1.5px Solid #C75052;
+        border-bottom: 1.5px Solid #C75052
+    }
+    
+    h1, h3, div {font-family: 'Lato', sans-serif;}
+    
+    h1 {font-weight: 700px; font-size: 3em}
+    
+    
+    /*End of Header CSS  */
+      
+    /*Img Carousel css*/
+    .carousel {
+      max-width: 50%;
+      height: auto;
+      align-content: stretch;
+    }
+    
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .carousel {
+      border: solid #f47e17;
+    }
+    
+    /*cards styling  */
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
+    
+    .card {
+      justify-content:space-between;
+    }
+    /*appApplicationPage  */
+
+/* media application*/
+
+div.media {
+  border-radius: 4px;
+  border-color: #737373;
+  margin-left: 10px;
+}
+
+div.image1{
+  width: 200px;
+}
+
+/*media-text*/
+p.media-text, h5 {
+  margin: 15px 25px 25px 15px;
+
+}
+
+/*Imgs W3schools had a great idea for clearfix; ask for more details  */
+img {
+  float: left;
+  padding: 5px;
+  width: 450px;
+}
+
+card-body {
+  border-radius: 4px;
+  border-color: #737373;
+  margin-left: 10px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+    
+    

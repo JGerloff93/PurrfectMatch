@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Purrfect Match</title>
+      <!-- This link below is our bootstrap online link -->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="imgcontainer">
+            <div class="row">
+               <div class="col-lg-12">
+                  <!-- To center everything at once we will group it into a div id tag  -->
+                  <div id="Content">
+                     <h1>Purrfect Match</h1>
+                     <h3>A Human-Feline Matching App</h3>
+                     <hr>
+                     <!--Lets have the button take you to the application; maybe in a modal? -->
+                     <button type="button" class="btn btn-secondary btn-lg" id="getStarted"><i class="fa fa-paw"></i> Get Started!</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+             <!-- Nav Bar -->
+             <nav class="navbar navbar-expand navbar-expand-lg navbar-light">
+               <!-- This should take you back to home   -->
+               <a class="navbar-brand" href="PurrfectMatch - LandingPage.html">Purrfect Match</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <!--   I want the below links to stay on one line in our navbar; i have tried calling the class in CSS with display inline; however, no luck.-->
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li>
+                        <a class="nav-link" href="PurrfectMatch - OurCats.html">Our Cats! <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li>
+                        <a class="nav-link" href="#">Apply Today! <span class="sr-only">(current)</span></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+               </div>
+            </nav>
+            <!-- NavBar End -->
+      </header>
+      
+      <br>
+      <!-- Media object and img start-->
+      <div class="media mr-auto ml-auto">
+         <div class="media-body col-xs-8">
+            <h5>About Our Application!</h5>
+            <p class="media-text ml-3">Unfortunately, many of our animals are castaways, rehoused, or victims of animal abuse. As a result, we take our vetting services <em> very </em> seriously. All of our cats are spayed/neutered, vaccinated, and chipped. If you are looking to adopt, please fill out the below form and ensure that you meet the requirements below:
+            <ul>
+               <li>At least 16 years of age.</li>
+               <ul>
+                  <li>Or a co-appliant who is.</li>
+               </ul>
+               <li>Have the resources to take care of a cat.</li>
+               <li>Can dedicate at least an hour a day to your cat. </li>
+            </ul>
+            </p>
+         </div>
+         <img class="ml-3 col-xs-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwB8oQFkhl0ZFtbOV_d5yxO8pr5la-NipWLf0EyRdLkLKouE7n" alt="Man with Cat">
+      </div>
+      <!-- Make Sure to put in background img -->
+      <div class="card form mt-3">
+      <div class="card-body">
+         <div class="row">
+            <div class="col-lg-4 ml-lg-4">
+               <img class="img-fluid" src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="tabby cat">  
+            </div>
+            <div class="col">
+               <form action="/action_page.php" method="post" autocomplete="on">
+                  <fieldset>
+                     <legend>
+                        <h4>Submit Your Application!</h4>
+                     </legend>
+                     <div class="form-group">
+                        <label for="FirstName"></label>
+                        <p>Your First Name</p>
+                        <input type="text" class="form-control" id="FirstName" maxlength = "30" value="" placeholder="First Name" required>
+                        <label for="LastName"></label>
+                        <p>Your Last Name </p>
+                        <input type="text" class="form-control" id="LastName" maxlength = "30" value="" placeholder="Last Name" required>
+                        <!--Lets say hypothetically you must be at least 16 to adopt; I know it would be a conditional in JS, but how would I link it to the DOB and how can I get it to autofill -->
+                        <p> Your Date of Birth</p>
+                        <input type="text" class="form-control" id="Birthday" maxlength = "30" value="" placeholder="mm/dd/yyyy" required>
+                     </div>
+                     <label for="phone">
+                        <p>Enter your contact information:</p>
+                     </label>
+                     <br>
+                     <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required placeholder="Phone Number">
+                     <label for="InputEmail"></label>
+                     <input type="email"  id="Email" minlength="6" maxlength = "30" value="" placeholder="Email Address" required> 
+                     <br>
+                     <p>May we contact you?</p>
+                     <input type="radio" id="contactYes" name="contactRadios" value="yes" />
+                     <label for="contactYes">Yes</label>
+                     <input type="radio" id="contactNo" name="contactRadios" value="no" />
+                     <label for="contactNo">No</label>
+                     <!-- Note: I want to put a placeholder here but it does not appear to be working -->
+                     <textarea placeholder="Briefly describe yourself and your reasons for adopting." rows="5" cols="50" minlength="20" maxlength = "500" required> Briefly describe yourself and your reasons for adopting.
+      </textarea>
+                     <br>
+                     <div class="form-group">
+                        <label for="InputFile">
+                           <p>Please Attach a Reference Sheet</p>
+                        </label>
+                        <br>
+                        <input type="file" id="exampleInputFile">
+                     </div>
+                     <input type="submit" value="Submit">
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--End of form-->
+      <!-- Start of Footer -->
+      <footer class="site-footer">
+         <div class="container">
+            <div class="row">
+              
+               <div class="col-6 col-sm-5 text-center">
+                  <h5>Social</h5>
+                  <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/cats_of_instagram/?hl=en"><i class="fa fa-instagram"></i></a>
+                  <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/CocaForCats/"><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/watch?v=cbP2N1BQdYc"><i class="fa fa-youtube"></i></a>
+               </div>
+               <div class="col-sm-4 text-center">
+                  <a role="button" class="btn" href="tel:+0-123-456-7890"><i class="fas fa-phone"></i> 0-123-456-7890
+                  </a><br>
+                  <a role="button" class="btn " href="PurrfectMatch@gmail.com"> <i class="fa fa-envelope-open"></i>
+                     PurrfectMatch@gmail.com</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End of Footer -->
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+</html>

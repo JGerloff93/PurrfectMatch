@@ -23,9 +23,49 @@
 						<h1>Purrfect Match</h1>
 						<h3>A Human-Feline Matching App</h3>
 						<hr>
-<!--Lets have the button take you to the application; maybe in a modal? -->
-            <button type="button" class="btn btn-secondary btn-lg"><i class="fa fa-paw"></i> Get Started!</button>
-					</div>
+<button type="button"  class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#getStarted"><i class="fa fa-paw"></i> Curious?</button>
+</div>
+<!-- Start of Modal -->
+    <div class="modal fade" id="getStarted" tabindex="-1" role="dialog" aria-labelledby="getStartedLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="getStartedContent">
+      <div class="modal-header">
+        <h5 class="modal-title">Curiousity killed the cat...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>So here at <em>Purrfect Match</em>, we want to make sure you have all the information needed to make a well informed decision! Just drop your contact information below along with your preferred method, and one of our professionals will reach out to you with an answer! </p>
+        <hr>
+<form>
+  <br>
+  <textarea placeholder="Briefly describe your question." rows="5" cols="45" minlength="20" maxlength = "100" required> Briefly describe your question(s).
+  </textarea> 
+  <br>
+    <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required placeholder="Phone Number">
+ <label for="InputEmail"></label>
+    <input type="email"  id="Email" minlength="6" maxlength = "30" value="" placeholder="Email Address" required>
+  <br>
+  Preferred Method:
+  <br>
+    <input type="radio" id="contactPhone" name="contactRadios" value="phone" />
+    <label for="contactPhone">Phone?</label>
+    <input type="radio" id="contactEmail" name="contactRadios" value="email" />
+    <label for="contactEmail">Email?</label>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit!</button>
+      </div>
+    </div>
+  </div>
+</div>   
+<!-- End of Modal-->
+					
 				</div>
 		</div>
 </div>
@@ -40,10 +80,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav mr-auto">
             <li>
-               <a class="nav-link" href="PurrfectMatch - OurCats.html">Our Cats! <span class="sr-only">(current)</span></a>
+               <a class="nav-link" href="#">Our Cats! <span class="sr-only">(current)</span></a>
             </li>
             <li>
-               <a class="nav-link" href="#">Apply Today! <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="PurrfectMatch - Application.html"> Apply Today! <span class="sr-only">(current)</span></a>
             </li>
          </ul>
       </div>
@@ -53,9 +93,11 @@
    <!-- NavBar End -->
   </header>
 <br>
-  <!-- Img Carousel (copied from NuCamp Site) start -->
+  <!-- Img Carousel start -->
   <div class="row row-content">
-    <div class="col-md-8 mx-auto">
+    <div class="col-md-8 col-4 mx-auto">
+       <!-- new div tag, flex tag, and justify center  -->
+       <div class="d-flex justify-content-center"> 
        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
           <!-- the ol attribute and indicators gives us our little bar at the bottom -->
           <ol class="carousel-indicators">
@@ -65,14 +107,14 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1571819146693-cb6c4b356e77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="First slide">
+              <img class="d-block w-100" style="max-height: 60vh;"  src="https://images.unsplash.com/photo-1571819146693-cb6c4b356e77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="First slide">
             <div class="carousel-caption">
             <h5>Friendship:</h5>
             <p>Find your new best friend!</p>
           </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Second slide">
+              <img class="d-block w-100" style="max-height: 60vh;" src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Second slide">
               <div class="carousel-caption">
             <h5>Impactful:</h5>
             <p>By adopting, you are helping cats in need!</p>
@@ -80,7 +122,7 @@
             </div>
         
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1555955924-a8c17aa846b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Third slide">
+              <img class="d-block w-100" style="max-height: 60vh;" src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Third slide">
               <div class="carousel-caption">
             <h5>Community!</h5>
             <p>Every community needs an animal shelter. By adopting, you are ensuring that resources are opened up to help other cats in need!</p>
@@ -97,9 +139,9 @@
           </a>
        </div>
     </div>
+    </div>
  </div>
-
-  <!-- Img Carousel (copied from NuCamp Site) end -->
+  <!-- Img Carousel end -->
 
 <br>
 <!--Images  Start (lets put the descriptions in Card formats; the names will be the card title-->
